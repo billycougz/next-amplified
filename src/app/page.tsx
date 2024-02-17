@@ -55,6 +55,10 @@ export default async function Home() {
         </div>
       )}
 
+      {Boolean(blogs?.length) && (
+        <h1>Blogs</h1>
+      )}
+
       <ul>
         {blogs.map((blog) => {
           return <li style={{ listStyle: 'none' }}>{blog.name}</li>;
